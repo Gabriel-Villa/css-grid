@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: white;
+    font-size: 20px;
+}
+
+.grid{
+    display: grid;
+}
+
+/*--navbar--*/
+nav.nav {
+    background: red;
+}
+nav.nav ul{
+    display: flex;
+    background: yellow;
+    padding: 20px 40px;
+}
+nav.nav ul li{
+    list-style: none;
+}
+nav.nav ul li a{
+    text-decoration: none;
+}
+
+/*--header--*/
+header.header{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: orange;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/*--main--*/
+main{
+    display: grid;
+    grid-template-columns: 20% 58% 20%;
+    column-gap: 1em;
+}
+main aside{
+    border: 1px solid black;
+    display: grid;
+    background: brown;;
+    grid-template-rows: repeat(2,1fr);
+}
+main aside .top-products{
+    background: greenyellow;
+}
+main aside .new-products{
+    background: white;
+}
+
+
+main section{
+    background: red;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+main .right{
+    border: 1px solid black;
+}
+
+
+/*--footer--*/
+footer{
+    background: black;
+}
+footer .suscription{
+    text-align: center;
+    padding: 40px 0px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
+}
+footer .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background: black;
+    color: white;
+}
+footer .social-medias , footer .about{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    padding: 40px 0px;
+    border-right: 1px solid grey;
+}
+footer .right{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    padding: 40px 0px;
+}
+footer .trending{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+footer .trending button{
+    width: 80px;
+    height: 20px;
+}
+footer .right{
+    border-top: 1px solid grey;
+    color: white;
+}
